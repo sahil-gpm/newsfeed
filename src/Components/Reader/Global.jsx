@@ -42,7 +42,7 @@ const Global = () => {
                     )
                 })}
 
-                {fetching && <FadeLoader color='#1e3a8a' width={80} title='Loading news articles'/>}
+                {fetching && <FadeLoader color='#1e3a8a' title='Loading news articles'/>}
             </div>
         </div> : <Pagenotfound/>}
         </>
