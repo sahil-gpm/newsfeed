@@ -12,7 +12,7 @@ const News = () => {
     const [country, setCountry] = useState("in")
     const [category, setCategory] = useState("")
     const [newsarray, setNewsArray] = useState([])
-    const topheadlineurl = `https://newsapi.org/v2/top-headlines?country=${country.toLowerCase()}&${category !== "" && `q=${category}`}&apiKey=b1f0cf2d3c2c4c2d926590c5c59073bc`
+    const topheadlineurl = `https://newsapi.org/v2/top-headlines?country=${country.toLowerCase()}&${category !== "" && `q=${category}`}&apiKey=yourApikEY`
 
     useEffect(() => {
         if (!auth.currentUser) return
