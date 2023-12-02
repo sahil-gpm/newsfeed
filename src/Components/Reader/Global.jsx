@@ -17,7 +17,7 @@ const Global = () => {
         let cancel = false
         if(cancel) return
         setFetching(true)
-        axios.get(`https://newsapi.org/v2/everything?q=${category !== "" && `q=${category}`}&apiKey=b1f0cf2d3c2c4c2d926590c5c59073bc`).then((data) => {
+        axios.get(`https://newsapi.org/v2/everything?q=${category !== "" && `q=${category}`}&apiKey=apiKey`).then((data) => {
             setNewsArray(data.data.articles);
         }).catch((e) => {
             toast.error(e.message)
